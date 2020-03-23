@@ -22,9 +22,9 @@
         </div>
         <h3>Selamat Datang..</h3>
         <?php
-        echo (empty($this->session->userdata('StudentName'))) ? "<h2>Siswa Peserta Ujian</h2>" : "
-            <h2 id='log'><a href='".site_url('student/login/logout/')."' class='hidden-md hidden-sm hidden-lg'>Logout &nbsp;<span class='glyphicon glyphicon-log-out'></span></a></h2>
-            <h2>".$this->session->userdata('StudentName')."</h2>
+        echo (empty($this->session->userdata('StudentName'))) ? "<h2 class='student-name-null'>Siswa Peserta Ujian</h2>" : "
+            <h2 id='log' style='padding-top:5px'><a href='".site_url('student/login/logout/')."' class='hidden-md hidden-sm hidden-lg'>Logout &nbsp;<span class='glyphicon glyphicon-log-out'></span></a></h2>
+            <h2 class='student-name'>".$this->session->userdata('StudentName')."</h2>
             <h2 id='log' class='hidden-xs'><a href='".site_url('student/login/logout/')."'>Logout &nbsp;<span class='glyphicon glyphicon-log-out'></span></a></h2>";
         ?> 
     </div>

@@ -243,7 +243,7 @@ function question(id,no){
           <a href="javascript:AlertIt();" class="toggleBtn" id="toggleLink">
             <div id="awal" align="center" style="display:none;"><font size="+3"> > </font></div>
             <div id="ahir" style="display:block">
-              <table border="0" class="list">
+              <table border="0" class="list" style="z-index:99">
                 <tr>
                   <td valign="middle" width="50px" align="center">
                     <font size="+3" color="#FFFFFF">< </font>
@@ -264,7 +264,9 @@ function question(id,no){
               if($("#slideMenu").hasClass('closed')){
                       $("#slideMenu").animate({right:0}, 200, function(){
                         $(this).removeClass('closed').addClass('opened');
-                        document.getElementById("kakisoal").style.width = '74%';
+                        if ( $(window).width() > 739) {
+                           document.getElementById("kakisoal").style.width = '74%';
+                        }
                         $("a#toggleLink").removeClass('toggleBtn').addClass('toggleBtnHighlight');
                       });
               $("#awal").css("display", "block");
@@ -319,8 +321,6 @@ function question(id,no){
     </div>
     <div class="col-md-4">
       <button id="btnNextSoal" class="btn btn-primary btn-next activebutton" onclick="return question($('#no'+(parseInt(document.getElementById('soal').textContent)+1)).val(), parseInt(document.getElementById('soal').textContent)+1)">SOAL BERIKUTNYA</button>
-    </div>
-    <div class="col-md-4">
       <button id="btnFinish" class="btn btn-danger btn-next" onclick="return confirm('Apakah anda sudah  yakin?')">SELESAI</button>
     </div>
  </section> 

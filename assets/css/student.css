@@ -257,7 +257,7 @@ footer{
 		top: 35%;
 	}
 	.list td{
-			padding: 13px 5px 5px 0px;
+			padding: 23px 3px 15px 0px;
 			font-size: 12px;
 			color: 	#fff;
 	}
@@ -1348,9 +1348,8 @@ header .navbar .navbar-brand{
 		height:60px;
 		color:#FFFFFF;
     }
-.foto{height:40px;}	
-.fontlembarsoal{ padding-top:50px;}
-
+	.foto{height:40px;}	
+	.fontlembarsoal{ padding-top:50px;}
     .left1{width: auto;    height: 91px;}
     .right1 {
         float: none;
@@ -1626,7 +1625,7 @@ input[type="radio"] + label {
     .container1 > div {
         display: block;
 		width: 100%;
-		min-height: 60px;
+		min-height: 20px;
 	}
 	.btn-prev{
 		width: 100%;
@@ -1634,7 +1633,7 @@ input[type="radio"] + label {
 	}
 	.btn-next{
 		width: 100%;
-		margin-top: 0px;
+		margin-top: 10px;
 	}
 	.labele{
 		width: 100% !important;
@@ -1643,7 +1642,8 @@ input[type="radio"] + label {
 		margin-left: 30px;
 	}
 	.kakisoal{
-		z-index: -99;
+		z-index: 1;
+		min-height:180px;
 	}
 }
 
@@ -1659,8 +1659,6 @@ input[type="radio"] + label {
   border-radius: 2px;
   cursor:pointer;
   color:#FFF;
-  padding-bottom:10px;
-  padding-top:10px;
   width:225px;
   }
 input[type="checkbox"] {
@@ -1708,7 +1706,7 @@ input[type="checkbox"] {
     background-color: #999;
     width: 25px;
     height: 25px;
-    margin: 10px;
+    margin-top: 10px;
     line-height: 20px;
     color: white;
     font-size: 18px;
@@ -1785,6 +1783,12 @@ input[type="checkbox"] {
 	}
 	#log{
 		font-size: 16px;
+	}
+	.student-name {
+		padding-top:2px
+	}
+	.student-name-null {
+		padding-top:3px
 	}
 }
 
@@ -1910,9 +1914,9 @@ input[type="checkbox"] {
 	#slideMenu{
 		position:fixed;
 		right:0;
-		top:100px;
+		top:90px;
 		width:238px;
-		height:200px;
+		height:400px;
 		border-left:0px;
 		/*background-color:#efefef;*/
 		background-color:#efefef;
@@ -1964,8 +1968,19 @@ input[type="checkbox"] {
 		border-color:#ccc;
 		padding:20px;
 		background-color:#FFF;
-		overflow:scroll; height:160px;
+		overflow:scroll; height:360px;
 		font:12px/25px Verdana, Arial, Helvetica, sans-serif;
+	}
+	#awal{
+		top: 250px;
+		right: 235px;
+		position: fixed;
+		color:#FFF;
+		font-family:Arial, Helvetica, sans-serif;
+		margin:0px auto;
+		background: #e66c69;
+		padding: 10px;
+		z-index: 10
 	}
 		
 }
